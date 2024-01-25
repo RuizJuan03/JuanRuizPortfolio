@@ -36,13 +36,6 @@ h1 {
   .title-section h1 {
     font-size: 24px; /* Smaller font size for mobile devices */
   }
-
-  .ProjectSummary p {
-    width: 100%; /* Ensures the paragraph spans the full width */
-    margin: 0 auto; /* Resets the margin, optionally centers the paragraph */
-    padding: 0; /* Resets the padding */
-    box-sizing: border-box; /* Includes padding and border in the element's total width */
-  }
 }
 
 
