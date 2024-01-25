@@ -1,0 +1,374 @@
+.navbar {
+  color: white;
+}
+
+.nav-item {
+  color: white;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(109.6deg,
+      rgb(20, 30, 48) 11.2%,
+      rgb(36, 59, 85) 91.1%);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  width: 100%;
+  padding: 30px;
+  color: white;
+}
+
+.cover-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 135px;
+}
+
+
+
+
+.Intro-text {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  width: 50%;
+  padding-bottom: 15px;
+
+
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards, blinking 0.77s infinite;
+  font-size: 50px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border-right-color: transparent;
+  }
+
+  50% {
+    border-right-color: white;
+  }
+
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.JuanRuiz {
+  color: rgb(227, 27, 109);
+}
+
+
+
+.sm-icons {
+  padding-right: 17px;
+  padding-bottom: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: aliceblue;
+  text-decoration: none;
+  /* Remove underline */
+}
+
+/* Keyframes animation for bouncing effect */
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    /* No vertical movement at the start and end */
+  }
+
+  40% {
+    transform: translateY(-20px);
+    /* Move the element upward at 40% */
+  }
+
+  60% {
+    transform: translateY(-10px);
+    /* Move the element downward at 60% */
+  }
+}
+
+/* Apply the animation to the icons when hovering */
+.bounce-icon:hover {
+  animation: bounce 0.8s;
+  /* Apply the "bounce" animation on hover */
+}
+
+/* Apply the animation to the icons when hovering */
+.sm-icons:hover {
+  animation: bounce 0.8s;
+  /* Apply the "bounce" animation on hover */
+}
+
+.projectspage {
+  padding-bottom: 5px;
+}
+
+
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  padding-top: 5px;
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: white;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #27374D;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #526D82;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #9DB2BF;
+}
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+
+
+/*---------- Projects Section ----------  */
+
+
+/* Python Password Manager */
+
+.pwdmanager-project-title {
+  text-align: center;
+  width: 100%;
+}
+
+.ProjectSummary {
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+}
+
+.psummarytitle {
+  padding-bottom: 10px;
+}
+
+.techdetailstitle {
+  padding-top: 30px;
+}
+
+.technicaldetails {
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+}
+
+.challenges {
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.passwordtable {
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.splunksearchpic {
+  height: 600px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+}
+
+.snippettitle {
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+
+.codesnippets {
+  display: block;
+  /* Stacks children vertically */
+}
+
+.codesnippets img {
+  max-width: 100%;
+  /* Ensures image is not wider than the container */
+  height: auto;
+  /* Keeps the aspect ratio of the image */
+  display: block;
+  /* Prevents inline formatting */
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+/* Homelab Vulnerability Analysis Project */
+
+.analysis-project-title {
+  text-align: center;
+  width: 100%;
+}
+
+.AnalysisProjectSummary {
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+}
